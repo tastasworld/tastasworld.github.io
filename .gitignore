@@ -5,3 +5,7 @@ dist/
 *.log
 .env
 .env.*
+
+# Lighthouse / Chrome user-data temp dirs (Snap Chromium on WSL writes literal "C:\..." dirs to cwd)
+C:*
+lighthouse.*

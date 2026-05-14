@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogType?: 'website' | 'article';
+}
+
+const { title, description, ogType = 'website' } = Astro.props;
+const siteName = 'tastasworld blog';
+const siteUrl = 'https://tastasworld.github.io';
+const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
+---
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{fullTitle}</title>
+  {description && <meta name="description" content={description} />}
+
+  <meta property="og:title" content={fullTitle} />
+  {description && <meta property="og:description" content={description} />}
+  <meta property="og:type" content={ogType} />
+  <meta property="og:site_name" content={siteName} />
+  <meta property="og:url" content={canonicalUrl} />
+
+  <meta name="twitter:card" content="summary" />
+
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="canonical" href={canonicalUrl} />
+</head>
+<body>
+  <header class="site-header">
+    <a href="/">{siteName}</a>
+  </header>
+  <main>
+    <slot />
+  </main>
+  <footer class="site-footer">
+    <p>© {new Date().getFullYear()} tastasworld</p>
+  </footer>
+</body>
+</html>

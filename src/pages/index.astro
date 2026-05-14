@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const posts = await getCollection('posts', ({ data }) => !data.draft);
+const sorted = posts.sort((a, b) =>
+  new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime()
+);
+---
+<BaseLayout title="tastasworld blog" description="商品レビュー等のブログ (準備中)">
+  <p>tastasworld の商品レビュー等を扱うブログです (準備中)。</p>
+
+  <h2>記事</h2>
+  <ul class="post-list">
+    {sorted.map((post) => (
+      <li>
+        <a href={`/posts/${post.id}/`}>{post.data.title}</a>
+        <time datetime={new Date(post.data.publishDate).toISOString().split('T')[0]}>
+          ({new Date(post.data.publishDate).toISOString().split('T')[0]})
+        </time>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

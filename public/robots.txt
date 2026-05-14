@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /privacy-policy.html
+
+Sitemap: https://tastasworld.github.io/sitemap-index.xml

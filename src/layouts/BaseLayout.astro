@@ -5,9 +5,10 @@ interface Props {
   title: string;
   description?: string;
   ogType?: 'website' | 'article';
+  isHomepage?: boolean;
 }
 
-const { title, description, ogType = 'website' } = Astro.props;
+const { title, description, ogType = 'website', isHomepage = false } = Astro.props;
 const siteName = 'tastasworld blog';
 const siteUrl = 'https://tastasworld.github.io';
 const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
@@ -35,7 +36,7 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
 </head>
 <body>
   <header class="site-header">
-    <a href="/">{siteName}</a>
+    {isHomepage ? <h1>{siteName}</h1> : <a href="/">{siteName}</a>}
   </header>
   <main>
     <slot />

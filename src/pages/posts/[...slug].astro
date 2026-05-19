@@ -17,6 +17,8 @@ const { Content } = await render(post);
   title={post.data.title}
   description={post.data.description}
   publishDate={post.data.publishDate}
+  noindex={post.data.noindex}
+  affiliate={post.data.affiliate}
 >
   <Content />
 </PostLayout>

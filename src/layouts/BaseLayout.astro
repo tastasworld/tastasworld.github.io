@@ -6,9 +6,16 @@ interface Props {
   description?: string;
   ogType?: 'website' | 'article';
   isHomepage?: boolean;
+  noindex?: boolean;
 }
 
-const { title, description, ogType = 'website', isHomepage = false } = Astro.props;
+const {
+  title,
+  description,
+  ogType = 'website',
+  isHomepage = false,
+  noindex = true,
+} = Astro.props;
 const siteName = 'tastasworld blog';
 const siteUrl = 'https://tastasworld.github.io';
 const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
@@ -30,7 +37,7 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
 
   <meta name="twitter:card" content="summary" />
 
-  <meta name="robots" content="noindex, nofollow" />
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
 
   <link rel="canonical" href={canonicalUrl} />
 </head>

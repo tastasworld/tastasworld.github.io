@@ -1,19 +1,24 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
 
 interface Props {
   title: string;
   description?: string;
   publishDate: Date;
+  noindex?: boolean;
+  affiliate?: { rakuten?: string; amazon?: string };
 }
 
-const { title, description, publishDate } = Astro.props;
+const { title, description, publishDate, noindex = true, affiliate } = Astro.props;
 const formattedDate = new Date(publishDate).toISOString().split('T')[0];
+const hasAffiliate = !!affiliate && (affiliate.rakuten || affiliate.amazon);
 ---
-<BaseLayout title={title} description={description} ogType="article">
+<BaseLayout title={title} description={description} ogType="article" noindex={noindex}>
   <article>
     <h1>{title}</h1>
     <p class="post-meta">公開日: <time datetime={formattedDate}>{formattedDate}</time></p>
+    {hasAffiliate && <AffiliateDisclosure />}
     <slot />
   </article>
 </BaseLayout>

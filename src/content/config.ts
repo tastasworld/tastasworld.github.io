@@ -9,6 +9,13 @@ const posts = defineCollection({
     publishDate: z.date(),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
+    noindex: z.boolean().default(true),
+    affiliate: z
+      .object({
+        rakuten: z.string().optional(),
+        amazon: z.string().optional(),
+      })
+      .optional(),
   }),
 });
 

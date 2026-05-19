@@ -1,8 +1,8 @@
 ---
-title: "[ブランド名] [モデル名] 炊飯器レビュー — [キャッチ一言]"
-description: "[1-2文の記事概要。タイトル+ブランド/モデルを自然に含める]"
-publishDate: 2026-05-14
-tags: ["家電", "炊飯器", "レビュー"]
+title: "Panasonic Bistro SR-X710D-H レビュー — 1.0L 5.5合 可変圧力IHジャー炊飯器"
+description: "Panasonic Bistro シリーズの可変圧力IHジャー炊飯器 SR-X710D-H (ライトグレージュ・1.0L 5.5合) を開封から本体構造・使い勝手まで実機チェック。"
+publishDate: 2026-05-19
+tags: ["家電", "炊飯器", "Panasonic", "Bistro", "レビュー"]
 draft: true
 noindex: true
 affiliate:
@@ -10,64 +10,126 @@ affiliate:
   amazon: ""
 ---
 
-{/* 公開準備:
-  1. title / description を実物に合わせて書き換え
-  2. 写真を src/assets/posts/rice-cooker-review/ に配置
-  3. 楽天アフィリエイト登録後、affiliate.rakuten に URL を入れる
-  4. 本文の TODO を埋める
-  5. 最終チェック後、draft: false / noindex: false に切替
+import { Image } from 'astro:assets';
+import boxFront from '~/assets/posts/rice-cooker-review/01-box-front.jpg';
+import boxOpen from '~/assets/posts/rice-cooker-review/05-box-open-greeting.jpg';
+import bodyFront from '~/assets/posts/rice-cooker-review/12-body-front.jpg';
+import lidOpen from '~/assets/posts/rice-cooker-review/14-lid-open.jpg';
+import innerPot from '~/assets/posts/rice-cooker-review/17-inner-pot.jpg';
+import measuringCup from '~/assets/posts/rice-cooker-review/18-measuring-cup.jpg';
+import installed from '~/assets/posts/rice-cooker-review/19-installed.jpg';
+
+{/* 公開準備チェックリスト:
+  1. [ ] リード文を埋める
+  2. [ ] 各セクションの TODO を実際の感想に置き換える
+  3. [ ] 楽天アフィリエイト登録後、affiliate.rakuten にURL設定
+  4. [ ] 必要なら写真の入れ替え (利用可能な全21ファイルは src/assets/posts/rice-cooker-review/ にあり)
+  5. [ ] 最終チェック後 draft: false / noindex: false に切替
 */}
 
-{/* TODO: リード文 (買ったきっかけ + 結論を 2-3 文で) */}
+<figure>
+  <Image src={bodyFront} alt="Panasonic Bistro SR-X710D-H の本体と付属しゃもじ" />
+  <figcaption>Panasonic Bistro SR-X710D-H (ライトグレージュ)</figcaption>
+</figure>
+
+{/* TODO: リード文 (2-3文) — 買い替えのきっかけ + 結論を一言で */}
 
 ## 購入背景
 
-{/* TODO: なぜ買ったか、何を期待したか、買い替えなのか新規なのか等 */}
-
-{/* 写真を入れる場合のサンプル (画像配置後に有効化):
-import { Image } from 'astro:assets';
-import hero from '~/assets/posts/rice-cooker-review/hero.jpg';
+{/* TODO: 旧炊飯器との比較 / 価格 / 決め手など (例: 「5年使った旧機が...」「Bistroの可変圧力IHが気になっていて...」) */}
 
 <figure>
-  <Image src={hero} alt="購入した炊飯器の全景" />
-  <figcaption>購入した炊飯器</figcaption>
+  <Image src={boxFront} alt="Panasonic SR-X710D-H の配送箱 (正面)" />
+  <figcaption>届いた状態。Panasonic のロゴと品番 SR-X710D-H が見える</figcaption>
 </figure>
+
+## 開封
+
+<figure>
+  <Image src={boxOpen} alt="箱を開けた瞬間、Bistro のウェルカムカードが出迎えてくれる" />
+  <figcaption>箱を開けると Bistro の案内カードが出迎えてくれる</figcaption>
+</figure>
+
+{/* TODO: 開封の所感 — 梱包の丁寧さ・取り出しやすさ・最初の印象など */}
+
+{/* 他に使える写真 (必要に応じて差替):
+  - 02-box-corner.jpg (配送箱 斜め)
+  - 03-box-top-bistro.jpg (上部 Bistro ロゴ)
+  - 06-box-contents-paper.jpg (説明書・保証書)
+  - 07-body-bubblewrap.jpg (プチプチ越し本体)
+  - 08-empty-styrofoam.jpg (空梱包)
+  - 09-leaflet-cover.jpg / 10-leaflet-message.jpg / 11-leaflet-rice.jpg (リーフレット)
 */}
 
 ## 外観・サイズ感
 
-{/* TODO: 開封・サイズ・デザイン・置き場所 */}
+<figure>
+  <Image src={installed} alt="炊飯器をキッチン背面収納の引き出しに設置" />
+  <figcaption>キッチン引き出しに収まる</figcaption>
+</figure>
+
+{/* TODO: 外観の印象 (シンプル / 質感 / 高級感) と置き場所事情 */}
+
+{/* 別アングル: 13-body-angle.jpg / 20-installed-angle.jpg */}
+
+## 内部構造と特徴
+
+<figure>
+  <Image src={lidOpen} alt="蓋を開けた状態。内蓋と内釜が見える" />
+  <figcaption>蓋オープン状態</figcaption>
+</figure>
+
+<figure>
+  <Image src={innerPot} alt="ダイヤモンド竈釜 (内釜)" />
+  <figcaption>本機の特徴「ダイヤモンド竈釜」</figcaption>
+</figure>
+
+{/* TODO: 可変圧力IH / ダイヤモンド竈釜 / 内蓋の構造などのポイント。
+   実際の質感や重さの感想を入れると良い */}
+
+{/* 他: 15-inner-lid.jpg / 16-no-pot.jpg */}
+
+## 付属品
+
+<figure>
+  <Image src={measuringCup} alt="付属の計量カップ" />
+  <figcaption>付属の計量カップ</figcaption>
+</figure>
+
+{/* TODO: しゃもじ・計量カップ・説明書類の評価 (過不足 / 質感 など) */}
 
 ## 使い勝手
 
-{/* TODO: セットアップ・操作感・お手入れのしやすさ */}
+{/* TODO: セットアップ容易さ / ボタン配置・タッチ操作 / 表示の見やすさ / お手入れのしやすさ */}
 
 ## 炊き上がり
 
-{/* TODO: 米の種類別 / 炊飯モード別の感想。粒の立ち、甘み、香り、保温具合など */}
+{/* TODO: 実際に何度か炊いてみた感想。
+   米の種類別 (コシヒカリ / あきたこまち 等) / 炊飯モード別 (ビストロ炊飯 / 早炊き 等)。
+   粒の立ち、甘み、香り、保温時の劣化具合、再加熱の有無、味の変化、など。
+   ※ 写真は実食写真があれば追加 (今回の素材には無し) */}
 
 ## 良い点
 
-- TODO
-- TODO
-- TODO
+- TODO: 
+- TODO: 
+- TODO: 
 
 ## 気になる点
 
-- TODO
-- TODO
+- TODO: 
+- TODO: 
 
 ## 総評
 
-{/* TODO: 誰におすすめか、買って良かったか、リピート意向 */}
+{/* TODO: どんな人におすすめか / 買って良かったか / リピート意向。最後に1-2行でまとめる */}
 
 ## 商品リンク
 
-{/* PR表記は PostLayout で affiliate frontmatter があれば自動表示される。
-    本文中には商品の楽天/Amazonリンクを記事ごとに記載 */}
+{/* PR表記は frontmatter の affiliate にURL設定すると PostLayout が自動表示する */}
 
-{/* TODO: 楽天/Amazon登録後にここを差し替え。
-    例:
-    <a href="https://hb.afl.rakuten.co.jp/...">楽天で見る</a>
-    <a href="https://amzn.to/...">Amazonで見る</a>
+{/* TODO: 楽天アフィリエイト登録後にここを差し替え
+例:
+<p><a href="https://hb.afl.rakuten.co.jp/...">楽天で見る</a></p>
+<p><a href="https://amzn.to/...">Amazon で見る</a></p>
 */}

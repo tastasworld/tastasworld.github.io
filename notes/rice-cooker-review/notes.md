@@ -1,51 +1,28 @@
----
-title: "Panasonic Bistro SR-X710D-H レビュー — 1.0L 5.5合 可変圧力IHジャー炊飯器"
-description: "Panasonic Bistro シリーズの可変圧力IHジャー炊飯器 SR-X710D-H (ライトグレージュ・1.0L 5.5合) を開封から本体構造・使い勝手まで実機チェック。"
-publishDate: 2026-05-19
-tags: ["家電", "炊飯器", "Panasonic", "Bistro", "レビュー"]
-draft: true
-noindex: true
-affiliate:
-  rakuten: ""
-  amazon: ""
+# Panasonic SR-X710D-H レビュー — ユーザー所感ノート
+
+> **このファイルはユーザー専用の1次情報です。**
+> AI は読むのみで編集しない (構成変更・推敲は `src/content/posts/rice-cooker-review.mdx` 側で行う)。
+> ユーザーは思いついたまま追記・修正してOK。順番・粒度・重複も気にしなくて良い。
+
 ---
 
-import { Image } from 'astro:assets';
-import boxFront from '~/assets/posts/rice-cooker-review/01-box-front.jpg';
-import boxOpen from '~/assets/posts/rice-cooker-review/05-box-open-greeting.jpg';
-import bodyFront from '~/assets/posts/rice-cooker-review/12-body-front.jpg';
-import lidOpen from '~/assets/posts/rice-cooker-review/14-lid-open.jpg';
-import innerPot from '~/assets/posts/rice-cooker-review/17-inner-pot.jpg';
-import measuringCup from '~/assets/posts/rice-cooker-review/18-measuring-cup.jpg';
-import installed from '~/assets/posts/rice-cooker-review/19-installed.jpg';
+## メモ: 書き方について
 
-{/*
-  ⚠️ このファイルは AI が notes/rice-cooker-review/{notes,images}.md を元に再構成する暫定版。
-  - 1次情報 (ユーザー原文) は notes/rice-cooker-review/notes.md にあり
-  - 画像の説明は notes/rice-cooker-review/images.md にあり
-  - 次の AI パスで構成を見直しつつ全面書き換え予定
+- セクションは目安。話が脱線したら新しいセクション (`## 〜について` や `## 追記 2026-MM-DD` 等) を増やしていい
+- 強調したいフレーズは `**...**` で囲むと AI 側で「これは重要」と認識しやすい
+- 「これ書こうかな」レベルのアイデアは `<!-- TBD: ... -->` で残しておくと AI が拾える
+- 別記事化したいネタは「### → 別記事候補」として末尾にメモしておく
 
-  公開準備チェックリスト:
-  1. [ ] notes.md / images.md を充実させる
-  2. [ ] AI に「mdx 再構成して」と依頼
-  3. [ ] dev サーバーでプレビュー確認 (1〜3 を反復)
-  4. [ ] 楽天アフィリエイト登録後、frontmatter の affiliate.rakuten にURL設定
-  5. [ ] 最終チェック後 draft: false / noindex: false に切替
-*/}
+---
 
-<figure>
-  <Image src={bodyFront} alt="Panasonic Bistro SR-X710D-H の本体と付属しゃもじ" />
-  <figcaption>Panasonic Bistro SR-X710D-H (ライトグレージュ)</figcaption>
-</figure>
+## リード / 結論
 
-{/* TODO: リード文 (2-3文) — 買い替えのきっかけ + 結論を一言で */}
 かれこれ8年くらい使っていた3.5合炊きの炊飯器がありましたが、こどもが産まれて普通ご飯を食べられる年齢(1.5才くらい)になってきたので、3.5合よりもっと炊ける炊飯器が欲しいとなり、5.5合炊きの炊飯器に乗り換えることにしました。あとは、内臓電池が切れて電源につないでいるときしか時計表示されなくなり、予約がちょっと不便になってきたこともあります。
 1人暮らし用でアイリスオーヤマ(RC-MA30)の標準品を使っていたのですが、どうせならよりおいしく炊ける高級品をということで、今回のものを購入しています。
 甘みがあってふっくらしていていいですね。あとは冷凍用モードもあって、冷凍ストックをたくさんする我が家にはいい感じです。
 
 ## 購入背景
 
-{/* TODO: 旧炊飯器との比較 / 価格 / 決め手など (例: 「5年使った旧機が...」「Bistroの可変圧力IHが気になっていて...」) */}
 前のものはちょっと履歴を探したのですが、いくらで購入したかはわかりませんでした。10,000円はしなかったかと思います。3.5合炊きで安いやつを選んだと記憶しています。
 10年くらい前に実家で使っていたPanasonicのものがおいしかったので、今回もPanasonicから選ぶことに。ほかのメーカーは候補にしなかったので、Panasonic内で選んでます。
 今回は、最高級品のひとつ手前のものにしました。最高級品(SR-X910D)は84,150円で、今回のSR-X710Dは59,400円でした。(全部5.5合炊きの値段)
@@ -75,20 +52,8 @@ import installed from '~/assets/posts/rice-cooker-review/19-installed.jpg';
 
 まあ、そういうときのために、今回写真をとったりもしています。ただ、メルカリってURLを張れないのですよね。
 
-
-<figure>
-  <Image src={boxFront} alt="Panasonic SR-X710D-H の配送箱 (正面)" />
-  <figcaption>届いた状態。Panasonic のロゴと品番 SR-X710D-H が見える</figcaption>
-</figure>
-
 ## 開封
 
-<figure>
-  <Image src={boxOpen} alt="箱を開けた瞬間、Bistro のウェルカムカードが出迎えてくれる" />
-  <figcaption>箱を開けると Bistro の案内カードが出迎えてくれる</figcaption>
-</figure>
-
-{/* TODO: 開封の所感 — 梱包の丁寧さ・取り出しやすさ・最初の印象など */}
 届いたときは、そのままのパッケージで届きました。これはお店にもよりますが、安いところを探して買ったので、最小コストで送付したのでしょうね。
 パッケージに伝票がそのまま張られてました。
 段ボールは特に問題なし。日本製なので段ボールもちゃんとしてますね。
@@ -96,23 +61,8 @@ import installed from '~/assets/posts/rice-cooker-review/19-installed.jpg';
 あと、心意気がよかったのが、Bistroのカードが出てくるところ。メッセージ性を感じますね。こだわってるというか。
 細かい配慮といいますか。
 
-{/* 他に使える写真 (必要に応じて差替):
-  - 02-box-corner.jpg (配送箱 斜め)
-  - 03-box-top-bistro.jpg (上部 Bistro ロゴ)
-  - 06-box-contents-paper.jpg (説明書・保証書)
-  - 07-body-bubblewrap.jpg (プチプチ越し本体)
-  - 08-empty-styrofoam.jpg (空梱包)
-  - 09-leaflet-cover.jpg / 10-leaflet-message.jpg / 11-leaflet-rice.jpg (リーフレット)
-*/}
-
 ## 外観・サイズ感
 
-<figure>
-  <Image src={installed} alt="炊飯器をキッチン背面収納の引き出しに設置" />
-  <figcaption>キッチン引き出しに収まる</figcaption>
-</figure>
-
-{/* TODO: 外観の印象 (シンプル / 質感 / 高級感) と置き場所事情 */}
 サイズは、まあ、5.5合ならこんなものでしょう。どのメーカーもどの製品もこんな感じ。
 丸形と四角型で特徴はありますが、丸形になってます。
 重さはそれなりにありますね。これも5.5合ならそんなもんでしょう。
@@ -122,22 +72,7 @@ import installed from '~/assets/posts/rice-cooker-review/19-installed.jpg';
 移動して使う前提ではないので、特に問題なしです。
 ざらざらしていて高級感はありますね。
 
-{/* 別アングル: 13-body-angle.jpg / 20-installed-angle.jpg */}
-
 ## 内部構造と特徴
-
-<figure>
-  <Image src={lidOpen} alt="蓋を開けた状態。内蓋と内釜が見える" />
-  <figcaption>蓋オープン状態</figcaption>
-</figure>
-
-<figure>
-  <Image src={innerPot} alt="ダイヤモンド竈釜 (内釜)" />
-  <figcaption>本機の特徴「ダイヤモンド竈釜」</figcaption>
-</figure>
-
-{/* TODO: 可変圧力IH / ダイヤモンド竈釜 / 内蓋の構造などのポイント。
-   実際の質感や重さの感想を入れると良い */}
 
 事前のコメントによると、炊きあがる前にポンっと大きい音がするらしいというのがあったのですが、実際使ってみると全然気にならないというか、そんな音してるの？っていうレベルです。
 こどもがいて騒がしいからなのかもしれませんが、全然わかりません。
@@ -146,16 +81,8 @@ import installed from '~/assets/posts/rice-cooker-review/19-installed.jpg';
 おそらくですが、ある一定以上の値段以上のものだと、そこまで差が感じられなくなってくるのかなと思っていて、おいしい部類の炊飯器なのかなと感じてます。
 味に違いがあるのはわかるのですが、ヨドバシカメラで炊飯器食べ比べとかやってるのですが、どれもおいしくてどれでも間違いはないかなというところです。
 
-{/* 他: 15-inner-lid.jpg / 16-no-pot.jpg */}
-
 ## 付属品
 
-<figure>
-  <Image src={measuringCup} alt="付属の計量カップ" />
-  <figcaption>付属の計量カップ</figcaption>
-</figure>
-
-{/* TODO: しゃもじ・計量カップ・説明書類の評価 (過不足 / 質感 など) */}
 自立するしゃもじ、1合が測れる計量カップ、説明書と保証書ですね。
 これまで自立するしゃもじは使ったことがなかったのですが、便利ですね。100均とかでも売ってるとは思いますが、はい、便利です。
 早く使ってればよかった。
@@ -167,18 +94,12 @@ import installed from '~/assets/posts/rice-cooker-review/19-installed.jpg';
 
 ## 使い勝手
 
-{/* TODO: セットアップ容易さ / ボタン配置・タッチ操作 / 表示の見やすさ / お手入れのしやすさ */}
 コンセントを入れると、正しい時刻が表示されました。特に時間は設定してないのですが、工場で設定してくれてるんでしょうかね。
 最初、無洗米で炊いたのですが、無洗米に設定し忘れてて普通米で炊いてしまいました。普通米・無洗米を選ぶところと、やわらかめ・ふつうを選ぶところが違ってます。
 それに気が付かずです。
 一度わかれば、難しくはないので特に問題はなし。
 
 ## 炊き上がり
-
-{/* TODO: 実際に何度か炊いてみた感想。
-   米の種類別 (コシヒカリ / あきたこまち 等) / 炊飯モード別 (ビストロ炊飯 / 早炊き 等)。
-   粒の立ち、甘み、香り、保温時の劣化具合、再加熱の有無、味の変化、など。
-   ※ 写真は実食写真があれば追加 (今回の素材には無し) */}
 
 お米は炊いたらその場ですぐ夜ご飯としてたべて、残りは冷凍保存してます。
 冷凍モードがあるのですが、上記のような使い方には対応してないので、冷凍用にするときは全部冷凍用保存になっちゃいますね。
@@ -189,37 +110,25 @@ import installed from '~/assets/posts/rice-cooker-review/19-installed.jpg';
 
 ## 良い点
 
-- TODO: 
-見た目がgood。高級感あり。お客さんが来ても問題なし。自慢できる
-
-- TODO: 
-味は問題なし。おいしい。
-
-- TODO: 
-洗いやすい。釜と蓋の2つだけ。本体側が水が吹きこぼれたりして汚れることもない。
+- 見た目がgood。高級感あり。お客さんが来ても問題なし。自慢できる
+- 味は問題なし。おいしい。
+- 洗いやすい。釜と蓋の2つだけ。本体側が水が吹きこぼれたりして汚れることもない。
 
 ## 気になる点
 
-- TODO: 
-値段が少々高めだが、このレベルのものだとこんなものかなと思います。
-
-- TODO: 
-丸いフォルムに違和感がある人はいるかも。個人的には問題なし。初めて丸い炊飯器ですが、もう慣れてまったく問題なし。
+- 値段が少々高めだが、このレベルのものだとこんなものかなと思います。
+- 丸いフォルムに違和感がある人はいるかも。個人的には問題なし。初めて丸い炊飯器ですが、もう慣れてまったく問題なし。
 
 ## 総評
 
-{/* TODO: どんな人におすすめか / 買って良かったか / リピート意向。最後に1-2行でまとめる */}
 炊飯器のランクアップをしたい人にはいいと思います。値段と味は比例しないと思っていて、高くても出してもいいかなと思える人向けですね。
 3万円～5万円くらいのものを買っておけば、どのメーカーでも味に問題はないかと思ってます。
 あとは、手入れのしやすさとか大きさとか外見の好みとかですかね。
 
+---
 
-## 商品リンク
+## 別記事候補メモ (← この記事には書かない、ストックへ)
 
-{/* PR表記は frontmatter の affiliate にURL設定すると PostLayout が自動表示する */}
-
-{/* TODO: 楽天アフィリエイト登録後にここを差し替え
-例:
-<p><a href="https://hb.afl.rakuten.co.jp/...">楽天で見る</a></p>
-<p><a href="https://amzn.to/...">Amazon で見る</a></p>
-*/}
+- メーカーの価格決定の仕組み (パナの値引き禁止 etc) — koichitas/projects #13 にストック済
+- 型落ち品を買うかどうか — #13 にストック済
+- メルカリ売却術 — #13 にストック済 (#15 とも関連)

@@ -16,7 +16,7 @@ const {
   isHomepage = false,
   noindex = true,
 } = Astro.props;
-const siteName = 'tastasworld blog';
+const siteName = 'まったりブログ';
 const siteUrl = 'https://tastasworld.github.io';
 const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
@@ -49,7 +49,7 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
     <slot />
   </main>
   <footer class="site-footer">
-    <p>© {new Date().getFullYear()} tastasworld</p>
+    <p>© {new Date().getFullYear()} まったりブログ</p>
   </footer>
 </body>
 </html>
